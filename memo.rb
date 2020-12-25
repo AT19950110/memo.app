@@ -7,7 +7,7 @@ memo_number = gets.to_i
 if memo_number == 1
   puts "拡張子を除いたファイル名を入力してください"
 
-  file_name = gets.to_s
+  file_name = gets.chomp
 
   puts "メモしたい内容を記入してください"
   p "完了したら Ctrl+D　を入力します"
@@ -23,7 +23,7 @@ if memo_number == 1
   elsif memo_number == 2
   puts "拡張子を除いたファイル名を入力してください"
   
-  file_name = gets.to_s
+  file_name = gets.chomp
 
   puts "追記したい内容を入力してください"
   p "完了したら Ctrl+D　を入力します"
